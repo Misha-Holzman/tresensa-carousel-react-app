@@ -1,11 +1,11 @@
 import React from 'react'
-import Mainpage from '../Mainpage'
+import Carousel from '../Carousel'
 import './style.css'
 
 function App () {
   return (
     <div className='App'>
-      <Mainpage />
+      <Carousel />
     </div>
   )
 }
