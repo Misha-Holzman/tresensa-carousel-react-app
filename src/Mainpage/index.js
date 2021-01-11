@@ -2,6 +2,8 @@ import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 import './style.css'
+import img1 from '../images/dunkin.png'
+import img2 from '../images/bestfiends.png'
 
 // class Mainpage extends Component {
 //   render () {
@@ -79,10 +81,10 @@ export default class Mainpage extends React.Component {
       <div>
         <Splide options={primaryOptions} ref={this.primaryRef}>
           <SplideSlide>
-            <img src='https://i.imgur.com/WuvAk1m.png' alt='' height='400px' />
+            <img src={img1} alt='' height='400px' />
           </SplideSlide>
           <SplideSlide>
-            <img src='https://i.imgur.com/b0k8X1n.png' alt='' height='400px' />
+            <img src={img2} alt='' height='400px' />
           </SplideSlide>
         </Splide>
 
@@ -91,13 +93,13 @@ export default class Mainpage extends React.Component {
             <div className='splide__track'>
               <ul className='splide__list'>
                 <li className='splide__slide'>
-                  <img src='https://i.imgur.com/b0k8X1n.png' alt='' />
+                  <img src={img1} alt='' />
                 </li>
                 <li className='splide__slide'>
-                  <img src='https://i.imgur.com/b0k8X1n.png' alt='' />
+                  <img src={img2} alt='' />
                 </li>
                 <li className='splide__slide'>
-                  <img src='https://i.imgur.com/b0k8X1n.png' alt='' />
+                  <img src={img2} alt='' />
                 </li>
               </ul>
             </div>
