@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 import './style.css'
@@ -51,8 +51,6 @@ export default class Mainpage extends React.Component {
     this.primaryRef.current.sync(this.secondaryRef.current.splide)
   }
 
-  
-
   render () {
     const primaryOptions = {
       type: 'loop',
@@ -81,10 +79,10 @@ export default class Mainpage extends React.Component {
       <div>
         <Splide options={primaryOptions} ref={this.primaryRef}>
           <SplideSlide>
-            <img src='https://i.imgur.com/WuvAk1m.png' alt='Image 1' height='400px' />
+            <img src='https://i.imgur.com/WuvAk1m.png' alt='' height='400px' />
           </SplideSlide>
           <SplideSlide>
-            <img src='https://i.imgur.com/b0k8X1n.png' alt='Image 2' height='400px' />
+            <img src='https://i.imgur.com/b0k8X1n.png' alt='' height='400px' />
           </SplideSlide>
         </Splide>
 
@@ -93,13 +91,13 @@ export default class Mainpage extends React.Component {
             <div className='splide__track'>
               <ul className='splide__list'>
                 <li className='splide__slide'>
-                  <img src='https://i.imgur.com/b0k8X1n.png' />
+                  <img src='https://i.imgur.com/b0k8X1n.png' alt='' />
                 </li>
                 <li className='splide__slide'>
-                  <img src='https://i.imgur.com/b0k8X1n.png' />
+                  <img src='https://i.imgur.com/b0k8X1n.png' alt='' />
                 </li>
                 <li className='splide__slide'>
-                  <img src='https://i.imgur.com/b0k8X1n.png' />
+                  <img src='https://i.imgur.com/b0k8X1n.png' alt='' />
                 </li>
               </ul>
             </div>
