@@ -1,11 +1,11 @@
 import React from 'react'
-import Carousel from '../Carousel'
+import SlickCarousel from '../SlickCarousel'
 import './style.css'
 
 function App () {
   return (
     <div className='App'>
-      <Carousel />
+      <SlickCarousel />
     </div>
   )
 }
