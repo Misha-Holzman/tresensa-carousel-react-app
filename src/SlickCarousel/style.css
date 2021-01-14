@@ -62,3 +62,7 @@
 .thumbnail-slider-wrap .slick-track .slick-slide img {
   width: 70%;
 }
+
+.slick-next, .slick-prev {
+  opacity: 80% !important;
+}
