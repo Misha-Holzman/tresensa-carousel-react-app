@@ -12,7 +12,7 @@ function App () {
   const [slider1, setSlider1] = useState(null)
   const [slider2, setSlider2] = useState(null)
 
-  useEffect((slider1, slider2) => {
+  useEffect(() => {
     setNav1(slider1)
     setNav2(slider2)
   })
