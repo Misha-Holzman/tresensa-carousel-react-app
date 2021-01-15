@@ -5,6 +5,13 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import leftArrow from '../images/carousel-arrow-left.png'
 import rightArrow from '../images/carousel-arrow-right.png'
+import image1 from '../images/gatorade.png'
+import image2 from '../images/orbitvenice.png'
+import image3 from '../images/pomodoro.png'
+import image4 from '../images/soberana.png'
+import image5 from '../images/temptations.png'
+import image6 from '../images/whackamole.png'
+
 
 function App () {
   const [nav1, setNav1] = useState(null)
@@ -102,28 +109,34 @@ function App () {
   const slidesData = [
     {
       id: 1,
-      title: 'repellendus id ullam',
-      label: 'Dolorem officiis temporibus.'
+      title: 'Gatorade',
+      label: 'Dolorem officiis temporibus.',
+      image: image1
     }, {
       id: 2,
-      title: 'excepturi consequatur est',
-      label: 'Officia non provident dolor esse et neque.'
+      title: 'Orbit',
+      label: 'Officia non provident dolor esse et neque.',
+      image: image2
     }, {
       id: 3,
-      title: 'eius doloribus blanditiis',
-      label: 'Ut recusandae vel vitae molestiae id soluta.'
+      title: 'Pomodoro',
+      label: 'Ut recusandae vel vitae molestiae id soluta.',
+      image: image3
     }, {
       id: 4,
-      title: 'nihil voluptates delectus',
-      label: 'Qui vel consequatur recusandae illo repellendus.'
+      title: 'Soberana',
+      label: 'Qui vel consequatur recusandae illo repellendus.',
+      image: image4
     }, {
       id: 5,
-      title: 'nemo dolorem necessitatibus',
-      label: 'Placeat odit velit itaque voluptatem.'
+      title: 'Temptations',
+      label: 'Placeat odit velit itaque voluptatem.',
+      image: image5
     }, {
       id: 6,
-      title: 'dolorem quibusdam quasi',
-      label: 'Adipisci officiis repudiandae.'
+      title: 'Whack-a-mole',
+      label: 'Adipisci officiis repudiandae.',
+      image: image6
     }
   ]
 
@@ -143,7 +156,9 @@ function App () {
 
             <div className='slick-slide' key={slide.id}>
               <h2 className='slick-slide-title'>{slide.title}</h2>
-              <img className='slick-slide-image' src={`https://picsum.photos/800/400?img=${slide.id}`} alt='' />
+              <div className='image-container'>
+                <img className='slick-slide-image' src={`${slide.image}`} alt='' />
+              </div>
               {/* <label className='slick-slide-label'>{slide.label}</label> */}
             </div>
 
@@ -157,11 +172,11 @@ function App () {
             ref={slider => (setSlider2(slider))}>
 
             {slidesData.map((slide) =>
-
-              <div className='slick-slide' key={slide.id}>
-                <img className='slick-slide-image' src={`https://picsum.photos/800/400?img=${slide.id}`} alt='' />
+              <div className='thumbnail-image-container'>
+                <div className='slick-slide-thumbnails' key={slide.id}>
+                  <img className='slick-slide-thumbnail-image' src={`${slide.image}`} alt='' />
+                </div>
               </div>
-
             )}
 
           </Slider>
