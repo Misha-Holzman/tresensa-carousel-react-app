@@ -70,18 +70,19 @@
 .slick-prev {
   left: -48px !important;
   top: 255px !important;
-  opacity: 50% !important;
+  opacity: 100% !important;
 }
 
 .slick-next {
   left: 778px !important;
   top: 255px !important;
-  opacity: 50% !important;
+  opacity: 100% !important;
 }
 
 .slick-next:before,
 .slick-prev:before {
-  content: "" !important;
+  /* content: "" !important; */
+  opacity: 100% !important;
 }
 
 
