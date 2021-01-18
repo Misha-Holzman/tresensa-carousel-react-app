@@ -64,25 +64,25 @@
 }
 
 .slick-arrow {
-  opacity: 100% !important;
+  opacity: 1 !important;
 }
 
 .slick-prev {
   left: -48px !important;
   top: 255px !important;
-  opacity: 100% !important;
+  opacity: 1 !important;
 }
 
 .slick-next {
   left: 778px !important;
   top: 255px !important;
-  opacity: 100% !important;
+  opacity: 1 !important;
 }
 
 .slick-next:before,
 .slick-prev:before {
   /* content: "" !important; */
-  opacity: 100% !important;
+  opacity: 1 !important;
 }
 
 

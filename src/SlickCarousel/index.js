@@ -36,13 +36,13 @@ function App () {
     lazyLoad: 'progressive',
     arrows: true,
     nextArrow: (
-      <div className='next-slick-arrow' style={{ opacity: '100% !important' }}>
-        <img src={rightArrow} height='30px' alt='' style={{ opacity: '100% !important' }} />
+      <div className='next-slick-arrow' style={{ opacity: '1 !important' }}>
+        <img src={rightArrow} height='30px' alt='' style={{ opacity: '1 !important' }} />
       </div>
     ),
     prevArrow: (
-      <div className='prev-slick-arrow' style={{ opacity: '100% !important' }}> 
-        <img src={leftArrow} height='30px' alt='' style={{ opacity: '100% !important' }} />
+      <div className='prev-slick-arrow' style={{ opacity: '1 !important' }}> 
+        <img src={leftArrow} height='30px' alt='' style={{ opacity: '1 !important' }} />
       </div>
     ),
     responsive: [
