@@ -11,6 +11,10 @@ import image3 from '../images/pomodoro.png'
 import image4 from '../images/soberana.png'
 import image5 from '../images/temptations.png'
 import image6 from '../images/whackamole.png'
+import gatoradeQrCode from '../images/gatorade–qr-code.png'
+import refreshIcon from '../images/refresh-icon.png'
+import responsiveIcon from '../images/responsive-icon.png'
+import rotateIcon from '../images/rotate-phone-icon.png'
 
 
 function App () {
@@ -110,32 +114,32 @@ function App () {
     {
       id: 1,
       title: 'Gatorade',
-      label: 'Dolorem officiis temporibus.',
+      label: 'Video Survey',
       image: image1
     }, {
       id: 2,
       title: 'Orbit',
-      label: 'Officia non provident dolor esse et neque.',
+      label: 'Flick Toss',
       image: image2
     }, {
       id: 3,
       title: 'Pomodoro',
-      label: 'Ut recusandae vel vitae molestiae id soluta.',
+      label: 'Lorem Ipsum',
       image: image3
     }, {
       id: 4,
       title: 'Soberana',
-      label: 'Qui vel consequatur recusandae illo repellendus.',
+      label: 'Video Survey',
       image: image4
     }, {
       id: 5,
       title: 'Temptations',
-      label: 'Placeat odit velit itaque voluptatem.',
+      label: 'Endless Runner',
       image: image5
     }, {
       id: 6,
-      title: 'Whack-a-mole',
-      label: 'Adipisci officiis repudiandae.',
+      title: 'Tapjoy',
+      label: 'Whack-a-Mole',
       image: image6
     }
   ]
@@ -150,16 +154,28 @@ function App () {
           {...settingsMain}
           asNavFor={nav2}
           ref={slider => (setSlider1(slider))}
+          className='large-slide-container'
         >
 
           {slidesData.map((slide) =>
 
             <div className='slick-slide' key={slide.id}>
-              <h2 className='slick-slide-title'>{slide.title}</h2>
               <div className='image-container'>
                 <img className='slick-slide-image' src={`${slide.image}`} alt='' />
+                <div className='controls-container'>
+                  <h2 className='slick-slide-title'>{slide.title}</h2>
+                  <label className='slick-slide-label'>{slide.label}</label>
+                  <div className='qr-code-container'>
+                    <img className='qr-code-image' src={gatoradeQrCode} alt='' />
+                    <h2 className='qr-code-text'>Preview on your <br /> mobile device</h2>
+                  </div>
+                  <div className='three-buttons-container'>
+                    <img className='refresh-icon-image' src={refreshIcon} alt='' />
+                    <img className='responsive-icon-image' src={responsiveIcon} alt='' />
+                    <img className='rotate-icon-image' src={rotateIcon} alt='' />
+                  </div>
+                </div>
               </div>
-              {/* <label className='slick-slide-label'>{slide.label}</label> */}
             </div>
 
           )}
