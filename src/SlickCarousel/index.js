@@ -40,12 +40,12 @@ function App () {
     arrows: true,
     nextArrow: (
       <div className='next-slick-arrow'>
-        <img src={rightArrow} height='30px' alt='' style={{ opacity: '1 !important' }} />
+        <img src={rightArrow} alt='' id='right-arrow-img' style={{ opacity: '1 !important' }} />
       </div>
     ),
     prevArrow: (
       <div className='prev-slick-arrow'>
-        <img src={leftArrow} height='30px' alt='' style={{ opacity: '1 !important' }} />
+        <img src={leftArrow} alt='' id='left-arrow-img' style={{ opacity: '1 !important' }} />
       </div>
     ),
     responsive: [
