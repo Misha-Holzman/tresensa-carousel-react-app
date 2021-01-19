@@ -16,7 +16,6 @@ import refreshIcon from '../images/refresh-icon.png'
 import responsiveIcon from '../images/responsive-icon.png'
 import rotateIcon from '../images/rotate-phone-icon.png'
 
-
 function App () {
   const [nav1, setNav1] = useState(null)
   const [nav2, setNav2] = useState(null)
@@ -45,7 +44,7 @@ function App () {
       </div>
     ),
     prevArrow: (
-      <div className='prev-slick-arrow'> 
+      <div className='prev-slick-arrow'>
         <img src={leftArrow} height='30px' alt='' style={{ opacity: '1 !important' }} />
       </div>
     ),
